@@ -1,0 +1,3 @@
+[2025-12-10 00:08:12,524][__main__][INFO] - Downloading lmo
+[2025-12-10 00:08:13,101][httpx][INFO] - HTTP Request: HEAD https://huggingface.co/datasets/bop-benchmark/lmo/resolve/main/lmo_base.zip "HTTP/1.1 302 Found"
+[2025-12-10 00:08:13,325][httpx][INFO] - HTTP Request: GET https://huggingface.co/api/datasets/bop-benchmark/lmo/xet-read-token/ecf444aa4ac48ce80a191c2266ad9deec8f5eb23 "HTTP/1.1 200 OK"

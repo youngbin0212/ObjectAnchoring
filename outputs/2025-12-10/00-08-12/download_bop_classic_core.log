@@ -1,3 +1,39 @@
 [2025-12-10 00:08:12,524][__main__][INFO] - Downloading lmo
 [2025-12-10 00:08:13,101][httpx][INFO] - HTTP Request: HEAD https://huggingface.co/datasets/bop-benchmark/lmo/resolve/main/lmo_base.zip "HTTP/1.1 302 Found"
 [2025-12-10 00:08:13,325][httpx][INFO] - HTTP Request: GET https://huggingface.co/api/datasets/bop-benchmark/lmo/xet-read-token/ecf444aa4ac48ce80a191c2266ad9deec8f5eb23 "HTTP/1.1 200 OK"
+[2025-12-10 00:08:15,438][__main__][INFO] - Downloaded to: gotrack_project\bop_datasets\lmo\lmo_base.zip
+[2025-12-10 00:08:16,064][httpx][INFO] - HTTP Request: HEAD https://huggingface.co/datasets/bop-benchmark/lmo/resolve/main/lmo_models.zip "HTTP/1.1 302 Found"
+[2025-12-10 00:08:18,799][__main__][INFO] - Downloaded to: gotrack_project\bop_datasets\lmo\lmo_models.zip
+[2025-12-10 00:08:19,071][httpx][INFO] - HTTP Request: HEAD https://huggingface.co/datasets/bop-benchmark/lmo/resolve/main/lmo_test_bop19.zip "HTTP/1.1 302 Found"
+[2025-12-10 00:08:46,243][__main__][INFO] - Downloaded to: gotrack_project\bop_datasets\lmo\lmo_test_bop19.zip
+[2025-12-10 00:08:46,281][__main__][INFO] - Downloading tless
+[2025-12-10 00:08:46,541][httpx][INFO] - HTTP Request: HEAD https://huggingface.co/datasets/bop-benchmark/tless/resolve/main/tless_base.zip "HTTP/1.1 302 Found"
+[2025-12-10 00:08:46,748][httpx][INFO] - HTTP Request: GET https://huggingface.co/api/datasets/bop-benchmark/tless/xet-read-token/5fd309a04476a842d93abfb584fba9ee7caecdf1 "HTTP/1.1 200 OK"
+[2025-12-10 00:08:48,078][__main__][INFO] - Downloaded to: gotrack_project\bop_datasets\tless\tless_base.zip
+[2025-12-10 00:08:48,334][httpx][INFO] - HTTP Request: HEAD https://huggingface.co/datasets/bop-benchmark/tless/resolve/main/tless_models.zip "HTTP/1.1 302 Found"
+[2025-12-10 00:08:57,053][__main__][INFO] - Downloaded to: gotrack_project\bop_datasets\tless\tless_models.zip
+[2025-12-10 00:08:57,381][httpx][INFO] - HTTP Request: HEAD https://huggingface.co/datasets/bop-benchmark/tless/resolve/main/tless_test_primesense_bop19.zip "HTTP/1.1 302 Found"
+[2025-12-10 00:12:16,232][__main__][INFO] - Downloaded to: gotrack_project\bop_datasets\tless\tless_test_primesense_bop19.zip
+[2025-12-10 00:12:16,268][__main__][INFO] - Downloading tudl
+[2025-12-10 00:12:16,566][httpx][INFO] - HTTP Request: HEAD https://huggingface.co/datasets/bop-benchmark/tudl/resolve/main/tudl_base.zip "HTTP/1.1 302 Found"
+[2025-12-10 00:12:16,772][httpx][INFO] - HTTP Request: GET https://huggingface.co/api/datasets/bop-benchmark/tudl/xet-read-token/6527f7d4b25d3e2e8dec84529284d9797b15f7b5 "HTTP/1.1 200 OK"
+[2025-12-10 00:12:18,693][__main__][INFO] - Downloaded to: gotrack_project\bop_datasets\tudl\tudl_base.zip
+[2025-12-10 00:12:18,954][httpx][INFO] - HTTP Request: HEAD https://huggingface.co/datasets/bop-benchmark/tudl/resolve/main/tudl_models.zip "HTTP/1.1 302 Found"
+[2025-12-10 00:12:21,436][__main__][INFO] - Downloaded to: gotrack_project\bop_datasets\tudl\tudl_models.zip
+[2025-12-10 00:12:21,704][httpx][INFO] - HTTP Request: HEAD https://huggingface.co/datasets/bop-benchmark/tudl/resolve/main/tudl_test_bop19.zip "HTTP/1.1 302 Found"
+[2025-12-10 00:14:23,318][__main__][INFO] - Downloaded to: gotrack_project\bop_datasets\tudl\tudl_test_bop19.zip
+[2025-12-10 00:14:23,356][__main__][INFO] - Downloading icbin
+[2025-12-10 00:14:24,604][httpx][INFO] - HTTP Request: HEAD https://huggingface.co/datasets/bop-benchmark/icbin/resolve/main/icbin_base.zip "HTTP/1.1 302 Found"
+[2025-12-10 00:14:24,809][httpx][INFO] - HTTP Request: GET https://huggingface.co/api/datasets/bop-benchmark/icbin/xet-read-token/315e784d5738e7ebf0324f07b5342c8d0d15cb6a "HTTP/1.1 200 OK"
+[2025-12-10 00:14:26,210][__main__][INFO] - Downloaded to: gotrack_project\bop_datasets\icbin\icbin_base.zip
+[2025-12-10 00:14:26,496][httpx][INFO] - HTTP Request: HEAD https://huggingface.co/datasets/bop-benchmark/icbin/resolve/main/icbin_models.zip "HTTP/1.1 302 Found"
+[2025-12-10 00:14:27,174][__main__][INFO] - Downloaded to: gotrack_project\bop_datasets\icbin\icbin_models.zip
+[2025-12-10 00:14:27,929][httpx][INFO] - HTTP Request: HEAD https://huggingface.co/datasets/bop-benchmark/icbin/resolve/main/icbin_test_bop19.zip "HTTP/1.1 302 Found"
+[2025-12-10 00:14:46,010][__main__][INFO] - Downloaded to: gotrack_project\bop_datasets\icbin\icbin_test_bop19.zip
+[2025-12-10 00:14:46,047][__main__][INFO] - Downloading itodd
+[2025-12-10 00:14:46,306][httpx][INFO] - HTTP Request: HEAD https://huggingface.co/datasets/bop-benchmark/itodd/resolve/main/itodd_base.zip "HTTP/1.1 302 Found"
+[2025-12-10 00:14:46,521][httpx][INFO] - HTTP Request: GET https://huggingface.co/api/datasets/bop-benchmark/itodd/xet-read-token/55b4e3c777acfa7c0cf9091d0cfc226f06af8cd6 "HTTP/1.1 200 OK"
+[2025-12-10 00:14:47,861][__main__][INFO] - Downloaded to: gotrack_project\bop_datasets\itodd\itodd_base.zip
+[2025-12-10 00:14:48,223][httpx][INFO] - HTTP Request: HEAD https://huggingface.co/datasets/bop-benchmark/itodd/resolve/main/itodd_models.zip "HTTP/1.1 302 Found"
+[2025-12-10 00:14:51,169][__main__][INFO] - Downloaded to: gotrack_project\bop_datasets\itodd\itodd_models.zip
+[2025-12-10 00:14:51,424][httpx][INFO] - HTTP Request: HEAD https://huggingface.co/datasets/bop-benchmark/itodd/resolve/main/itodd_test_bop19.zip "HTTP/1.1 302 Found"

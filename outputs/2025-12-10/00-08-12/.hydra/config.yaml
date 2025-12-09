@@ -1,0 +1,93 @@
+user:
+  project_name: gotrack
+  root_dir: ./gotrack_project
+machine:
+  trainer:
+    logger:
+      _target_: pytorch_lightning.loggers.TensorBoardLogger
+      save_dir: ${save_dir}/
+      name: ${user.project_name}
+    _target_: pytorch_lightning.Trainer
+    max_epochs: 1000
+    accelerator: gpu
+    devices:
+    - 0
+    deterministic: false
+    detect_anomaly: false
+    enable_progress_bar: true
+    strategy: ddp
+    precision: 32
+    val_check_interval: 300
+    log_every_n_steps: 1
+    num_sanity_val_steps: 2
+    limit_val_batches: null
+    limit_test_batches: null
+    callbacks: '${oc.dict.values: callback}'
+  name: local
+  batch_size: 1
+  num_workers: 1
+  root_dir: ${user.root_dir}
+callback:
+  checkpoint:
+    _target_: pytorch_lightning.callbacks.ModelCheckpoint
+    dirpath: ${save_dir}/checkpoints
+    save_last: true
+    verbose: true
+    save_top_k: -1
+    every_n_train_steps: 1000
+  lr:
+    _target_: pytorch_lightning.callbacks.LearningRateMonitor
+    logging_interval: step
+data:
+  dataloader:
+    _target_: dataloader.bop.BopDataset
+    root_dir: ${machine.root_dir}/bop_datasets/
+    dataset_name: null
+    coarse_pose_method: null
+model:
+  _target_: model.gotrack.GoTrack
+  opts:
+    _target_: model.config.GoTrackOpts
+    num_iterations_train: 1
+    num_iterations_test: 5
+    crop_size:
+    - 280
+    - 280
+    background_type: gray
+    backbone_name: dinov2_vits14-reg
+    decoder_opts:
+      _target_: model.blocks.config.DecoderOpts
+      patch_size: 14
+      enc_embed_dim: 384
+      dec_embed_dim: 768
+      dec_depth: 12
+      dec_num_heads: 12
+      mlp_ratio: 4
+      norm_im2_in_dec: true
+      act_layer_name: relu
+      norm_layer_name: layernorm
+    head_opts:
+      _target_: model.heads.dpt.config.DPTHeadOpts
+      dec_embed_dim: 768
+      hooks:
+      - 2
+      - 5
+      - 8
+      - 11
+      process_dims:
+      - 96
+      - 192
+      - 384
+      - 768
+      proj_dim: 256
+      head_hidden_dims:
+      - 64
+      - 256
+  checkpoint_path: ./gotrack_checkpoint.pt
+save_dir: ${machine.root_dir}/results/${name_exp}
+mode: pose_refinement
+name_exp: inference_gotrack
+dataset_name: null
+coarse_pose_method: null
+object_name: null
+sequence_name: null
